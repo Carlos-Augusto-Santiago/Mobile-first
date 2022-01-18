@@ -138,7 +138,7 @@ main {
     line-height: 1.6rem;
     color: #757575;
 }
-.main-currency-table {
+.main-currency-table, .main-second-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -146,12 +146,19 @@ main {
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
-.main-currency-table .currency-table--title {
+.main-currency-table .currency-table--title, .main-second-table .currency-table--title{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
-    line-height: 2.3rem;
+    line-height: 2.3rem;    
+    padding: 0 20px 0 20px;
+    text-align: left;
+}
+.main-currency-table .currency-table--title{
     color: var(--bitcoin-orange);
+}
+.main-second-table .currency-table--title{
+    color: var(--secondary-blue);
 }
 .currency-table--container {
     width: 90%;
@@ -214,8 +221,13 @@ main {
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--soft-orange);
     border-radius: 8px;
+}
+.main-currency-table .currency-table--date{
+    background-color: var(--soft-orange);
+}
+.main-second-table .currency-table--date{
+    background-color: var(--secondary-blue);
 }
 .currency-table--date p{    
     font-size: 1.2rem;
@@ -223,3 +235,4 @@ main {
     font-weight: 400;
     color: var(--warm-black);
 }
+
